@@ -46,8 +46,8 @@
     * Fichier avec un format définie
 
   ## Problématique
-    * ~Comment analyser un segment TCP à l'aide de WireShark ?~
-    * ~Comment transférer des données et s'assurer qu'elles ont bien été reçues ?~
+    * Comment analyser un segment TCP à l'aide de WireShark ?
+    * Comment transférer des données et s'assurer qu'elles ont bien été reçues ?
     * Comment envoyer des segments TCP tout en s'assurant de l'intégrité des données et vérifier qu'elles ont bien été reçues ?
 
   ## Généralisation
@@ -124,7 +124,7 @@ Inconvénients :
 
 TCP est utilisé : Navigateurs (avec http), FTP, SMT3 et POP3, peut marcher avec le DNS.
 
-**2 – UDP **
+**2 – UDP**
 
  ![](https://github.com/TL72X211/UE2_Prosit2/blob/Emilien/Screens_Prosit/4.png)
 
