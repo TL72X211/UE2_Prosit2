@@ -12,7 +12,7 @@
     * Fonction "Follow TCP Stream" : Fonction disponible sous Wireshark pour suivre un flot de données.
     * Segment de données : Portion d’espace d’adressage virtuel d’un programme. Il contient les variables globales et statiques déclarés par le programmeur. C’est ce qui va servir au « sergment code ».
     * Three Way Handhake :
- 
+    ![](https://github.com/TL72X211/UE2_Prosit2/blob/Emilien/Screens_Prosit/1.png)
     * Fichier WireShark :
     * Adresse proper : L’adresse propre, l’adresse correcte.
     * Numéro de port : Permet sur un ordinateur de distinguer les différents programmes informatiques qui écoutent ou émettent des informations sur des ports. On distingue un port par son numéro. Ce sont des portes qui donnent accès au système d’exploitation. Un numéro de port est codé sur 16 bits, soit 2^16 => 65536 ports distincts.
@@ -72,15 +72,16 @@
     * Déterminer les données interceptées
 
 
-**1 – TCP **
+**1 – TCP**
 
 Protocole IP -> @source + @destination + @port
+
 Protocole TCP ->
-	Vérifie que le destinataire est prêt à recevoir les données
-	Découper les gros paquets de données en plus petits pour que IP les accepte
-	Numéroter les paquets, et à la réception de vérifier qu’ils sont tous bien arrivés, de redemander les paquets manquants, réassembler avant de les donner aux logiciels.
-	S’occupe de la génération pour vérifier que les données sont bien arrivées.
- 
+- Vérifie que le destinataire est prêt à recevoir les données
+- Découper les gros paquets de données en plus petits pour que IP les accepte
+-	Numéroter les paquets, et à la réception de vérifier qu’ils sont tous bien arrivés, de redemander les paquets manquants, réassembler avant de les donner aux logiciels.
+-	S’occupe de la génération pour vérifier que les données sont bien arrivées.
+ ![](https://github.com/TL72X211/UE2_Prosit2/blob/Emilien/Screens_Prosit/2.png)
 @Port source [16 bits] -> Port source de la machine qui envoi
 @Port destination[16bits] port relatif à l’application en cours, sur la machine de destination.
 @Numéro de séquence [32 bits] numéro du paquet. Permet de réassembler à la fin, et de placer le paquet à la bonne place.
@@ -101,7 +102,7 @@ On peut aussi ajouter des options.
 
 
 Il utilise les « Three way handshake” pour opérer entre un client et un serveur. De même, lors de la fermeture de données, il utilisera un message particulier.
- 
+ ![](https://github.com/TL72X211/UE2_Prosit2/blob/Emilien/Screens_Prosit/3.png)
 
 
 La fenêtre coulissante ou « Sliding Windows » définit le volume de données susceptible d’être passées via une connexion TCP avant que le récepteur n’envoie un accusé de réception.
@@ -118,7 +119,7 @@ Inconvénients :
 
 TCP est utilisé : Navigateurs (avec http), FTP, SMT3 et POP3, peut marcher avec le DNS.
 **2 – UDP **
- 
+ ![](https://github.com/TL72X211/UE2_Prosit2/blob/Emilien/Screens_Prosit/4.png)
 
 @Port UDP [16 bits] : Port relatif à l’application source
 @Port Destination[16 bits] : Port relatif à l’application sur la machine à distance.
@@ -148,31 +149,13 @@ NAT (Network Address Translation) : Faculté dont dispose un routeur, de modifie
 PAT (Port Access Translation) : Permet de changer au passage le numéro de port dans le datagramme.
 MASQUERADE : Mélange entre le NAT et le PAT, peut connecter tout un réseau local construit sur une @IP privée d’internet.
 Les ports à connaître :
-  
+  ![](https://github.com/TL72X211/UE2_Prosit2/blob/Emilien/Screens_Prosit/5.png)
 
 
 **4 – Le modèle TCP/IP – OSI – DataType**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](https://github.com/TL72X211/UE2_Prosit2/blob/Emilien/Screens_Prosit/6.png)
+![](https://github.com/TL72X211/UE2_Prosit2/blob/Emilien/Screens_Prosit/7.png)
  
-
-
-
 **5 – Wireshark**
 En analysant les trames TCP, à l’heure indiqué, on trouve des images de vidéos YouTube.
 Voici un des liens :
