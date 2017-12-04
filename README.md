@@ -11,10 +11,7 @@
     * Protocole TCP : Transmission Control Protocol
     * Fonction "Follow TCP Stream" : Fonction disponible sous Wireshark pour suivre un flot de données.
     * Segment de données : Portion d’espace d’adressage virtuel d’un programme. Il contient les variables globales et statiques déclarés par le programmeur. C’est ce qui va servir au « sergment code ».
-    * Three Way Handhake :
-    
-    ![](https://github.com/TL72X211/UE2_Prosit2/blob/Emilien/Screens_Prosit/1.png)
-    
+    * Three Way Handhake : Définit par la suite.
     * Fichier WireShark :
     * Adresse proper : L’adresse propre, l’adresse correcte.
     * Numéro de port : Permet sur un ordinateur de distinguer les différents programmes informatiques qui écoutent ou émettent des informations sur des ports. On distingue un port par son numéro. Ce sont des portes qui donnent accès au système d’exploitation. Un numéro de port est codé sur 16 bits, soit 2^16 => 65536 ports distincts.
@@ -107,7 +104,9 @@ On peut aussi ajouter des options.
 
 Il utilise les « Three way handshake” pour opérer entre un client et un serveur. De même, lors de la fermeture de données, il utilisera un message particulier.
 
- ![](https://github.com/TL72X211/UE2_Prosit2/blob/Emilien/Screens_Prosit/3.png)
+![](https://github.com/TL72X211/UE2_Prosit2/blob/Emilien/Screens_Prosit/1.png)
+
+![](https://github.com/TL72X211/UE2_Prosit2/blob/Emilien/Screens_Prosit/3.png)
 
 
 La fenêtre coulissante ou « Sliding Windows » définit le volume de données susceptible d’être passées via une connexion TCP avant que le récepteur n’envoie un accusé de réception.
