@@ -8,9 +8,9 @@
 
 
   ## Mots Clés
-    * Protocole TCP
-    * Fonction "Follow TCP Stream"
-    * Segment de données
+* Protocole TCP
+* Fonction "Follow TCP Stream"
+* Segment de données
     * Three Way Handhake
     * Ficher WireShark
     * Adresse propre
