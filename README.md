@@ -66,3 +66,49 @@
   ### Réalisation
 * Etudier le fichier WireShark
 * Déterminer les données interceptées
+
+
+### Révision de WireShark
+--
+
+### Réviser le TCP/UDP
+
+Les deux protocoles appartiennent à la couche Tranposrt (4) du modèle OSI
+
+#### UDP
+  UDP (User Datagram Protocol) est un protocole d'acheminement de paquets, combiné avec l'IP il peut trouver la machine à laquelle il doit délivrer les données.
+  Ce protocole utilise un mode de transmission sans connexion. L'intégrité de ces données est assurée par une somme de contrôle dans son en-tête.
+  Ce protocole expose le programme qui l'utilise aux problèmes éventuels de fiabilité du réseau ; ainsi, il n'existe pas de garantie de protection quant à la livraison, l'ordre d'arrivée, ou la duplication éventuelle des datagrammes.
+  ![](https://image.prntscr.com/image/4i6CNSKzSbiRXTppOtJ0hg.png)
+  ![](https://image.prntscr.com/image/7Qkyu5SMSMa85SIFeLPDfQ.png)
+  
+#### TCP
+
+Le TCP a son inverse est un protocole qui utilise un mode de transmission avec connexion (Three Way Handshake)
+
+![](https://image.prntscr.com/image/ocsktJyDTN6mWfYyGMgmxA.png)
+
+
+#### Three Way Handshake
+
+Un Three-Way Handshake(TWH) est une méthode utilisée dans un réseau TCP / IP pour créer une connexion entre un hôte / client local et un serveur. Il s'agit d'une méthode en trois étapes qui nécessite que le client et le serveur échangent des paquets SYN et ACK (acknowledgment) avant le début de la communication de données.
+
+* Un client envoie un paquet de données SYN sur un réseau IP à un serveur sur le même réseau ou sur un réseau externe. L'objectif de ce paquet est de demander / infer si le serveur est ouvert pour de nouvelles connexions.
+* Le serveur cible doit avoir des ports ouverts pouvant accepter et initialiser de nouvelles connexions. Lorsque le serveur reçoit le paquet SYN du client, il répond et renvoie un accusé de réception - le paquet ACK ou le paquet SYN / ACK.
+* Le client reçoit le SYN / ACK du serveur et répond avec un paquet ACK.
+
+
+#### OSI
+
+![](https://alln-extcloud-storage.cisco.com/ciscoblogs/osi-550x425.gif)
+
+
+#### Socket
+
+Un socket est la combinaison de l'adresse IP et le port
+Par exemple : 192.168.1.1:33548
+
+
+#### Encapsulation
+
+![](http://www.routemybrain.com/wp-content/uploads/2010/04/encapsulation.jpg)
